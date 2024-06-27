@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../js/jquery.js"></script>
+    <title>Contactenos</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../image/ml.gif">
+        <div class="container-encabezado">
+            <h1 id="Nombre">Mess Life</h1>
+            <aside>
+                <ul class="etiquetas">
+                    <li class="orden"><a href="../index.html">Inicio</a></li>
+                    <li class="orden"><a href="./Origenes.html">Contactenos</a></li>
+                    <li class="orden"><a href="./Impacto.html">Impacto</a></li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <main class="Formulario">
+        <form action="" method="get">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="nombre" required placeholder="Nombre Completo">
+            <label for="Gmail">Correo</label>
+            <input type="email" name="Gmail" id="gmail" required placeholder="ejemplo.correo@eletronico.co">
+            <label for="Telefono">Telefono</label>
+            <input type="tel" name="Telefono" id="telefono" required placeholder="Numero Telefonico">
+            <label for="Ciudad">Ciudad</label>
+            <select name="Ciudad" id="ciudad">
+                <option value="Bogota">Bogotá</option>
+                <option value="Cali">Cali</option>
+                <option value="Medellin">Medellín</option>
+            </select>
+            <label for="tipo" id="formu">¿Como desea que lo contactemos?</label>
+            <div class="contenedor-formu">
+                <label for="1">Whatsapp</label>
+                <input type="radio" name="1" id="">
+                <label for="2">Telefono</label>
+                <input type="radio" name="1" id="">
+                <label for="3 ">Correo</label>
+                <input type="radio" name="1" id="">
+            </div>
+            <label for="Check">Aceptar terminos</label>
+            <input type="checkbox" name="Check">
+            <button type="submit" id="boton_formu">Enviar</button>
+        </form>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.4575325025758!2d-74.07752724923262!3d4.609224156994982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99758038f291%3A0x6b0365762c19a5bd!2sAIR%20FRIC!5e0!3m2!1ses-419!2sco!4v1714184069161!5m2!1ses-419!2sco"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+    <footer>
+        <p>&copy;2024 DERECHOS DE AUTOR</p>
+        <img id="facebook" src="../image/icons8-facebook.gif" class="icon">
+        <img id="instagram" src="../image/icons8-instagram.gif" class="icon">
+        <img id="x" src="../image/icons8-twitter-circled.gif" class="icon">
+        <img id="tiktok" src="../image/icons8-tik-tok.gif" class="icon">
+    </footer>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
