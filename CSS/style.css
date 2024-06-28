@@ -344,9 +344,9 @@ body {
 }
 
 .contenedor-formu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 80%;
+    left: 10%;
 }
 
 .contenedor-formu label {

@@ -1,12 +1,12 @@
 $(document).ready(function () {
     // Al pasar el mouse sobre la imagen
     $('.imagen').mouseenter(function () {
-        $(this).animate({
-            width: '25%' // Tamaño aumentado de la imagen
+        $(this).stop(2).animate({
+            width: '40%' // Tamaño aumentado de la imagen
         }, 'fast');
     });
     $('.imagen').mouseleave(function() {
-        $(this).animate({
+        $(this).stop(2).animate({
             width: '50%' // Restaurar tamaño original de la imagen
         }, 'fast');
     });
