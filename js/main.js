@@ -22,4 +22,26 @@ $(document).ready(function () {
         }, 'fast');
     });
 
+    var elementosAnimar = $('.animar');
+    
+    $(window).scroll(function() {
+        // Obtener la posición actual del scroll y la altura de la ventana
+        var scrollActual = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        
+        // Iterar sobre cada elemento .animar
+        elementosAnimar.each(function(index) {
+            // Obtener la posición de cada elemento
+            var position = $(this).offset().top;
+            
+            // Calcular cuándo debe aparecer el elemento
+            if (scrollActual > position - windowHeight + 200) {
+                // Agregar la clase 'aparecer' al elemento actual
+                $(this).addClass('aparecer');
+                
+                // Remover el elemento actual del arreglo para que no se vuelva a animar
+                elementosAnimar = elementosAnimar.not($(this));
+            }
+        });
+    });
 });

@@ -25,30 +25,64 @@ header {
 #logo {
     margin-top: 1%;
     margin-left: 1%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     box-shadow: 10px 15px 30px;
 }
 
+@media (max-width: 768px) {
+    #logo {
+        width: 125px;
+        height: 125px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 70px; 
+        height: 70px;
+    }
+}
+
 #Nombre {
     padding-bottom: 20px;
-    font-size: 55px;
+    font-size: 50px;
     color: white;
     margin-bottom: 5%;
 }
 
+@media (max-width: 768px) {
+    #Nombre {
+        font-size: 30px; 
+    }
+}
+
 .etiquetas {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-size: 20px;
-    /* Tamaño de fuente reducido */
     color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .etiquetas {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .etiquetas {
+        font-size: 14px; 
+    }
 }
 
 .orden {
     display: inline-block;
     margin-right: 10px;
+    margin-top: 25px;
 }
 
 .orden a {
@@ -96,6 +130,18 @@ header {
     height: 160px;
     border-radius: 60%;
     box-shadow: 10px 15px 30px;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+/* Estilo cuando aparece */
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
